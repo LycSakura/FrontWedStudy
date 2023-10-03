@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //声明
+    function say() {
+      document.write("Hi~~")
+    }
+    //调用
+    say()
+    function getSum(end) {
+      let sum = 0
+      for (let i = 1; i <= end; i++) {
+        sum += i
+      }
+      console.log(sum)
+    }
+    getSum(+prompt("输入累加到最后一个数的值"))
+  </script>
+</body>
+
+</html>

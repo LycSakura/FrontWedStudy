@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+    跨行合并 rowspan = "合并单元格个数" 合并代码写在上面单元格
+    跨列合并 colspan = "合并单元格个数" 合并代码写在左侧单元格
+    ps: <td colspan = "2"></td>
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合并单元格</title>
+</head>
+<body>
+    <table align="center" width="500" height = "249" border="1" cellspacing = "0">
+        <tr>
+            <td></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

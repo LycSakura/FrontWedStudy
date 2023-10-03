@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+    }
+
+    .nav {
+      width: 600px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+  <script>
+    const box = document.querySelector('.box')
+    //对象.style.属性 = '值'
+    // box.style.width = '300px'
+    // box.style.backgroundColor = 'hotpink'
+    //添加类名 className会覆盖以前的类名
+    box.className = 'nav box'
+    //元素.classList.add('类名')
+    box.classList.add('nav')
+    //元素.classList.remove('类名')
+    box.classList.remove('nav')
+    //元素.classList.toggle('类名') 切换类 有就删掉，没有就加上
+    box.classList.toggle('nav')
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //使用方法一：函数表达式
+    let fn = function () {
+      console.log("我是函数表达式")
+    }
+    //调用
+    fn();
+    //使用方法二：立即执行 形式一:(function(){}()) 形式二:(function(){})()
+    (function () {
+      let num = 10
+      console.log(num);
+    })();//第二个小括号里是实参。
+  </script>
+</body>
+
+</html>

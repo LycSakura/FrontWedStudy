@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let total = 2000
+    let flag = true
+    while (flag) {
+      let op = +prompt(`
+        请输入你要进行的操作:
+        1.存钱
+        2.取钱
+        3.查看余额
+        4.退出`)
+      switch (op) {
+        case 1:
+          let price1 = +prompt("请输入你的金额:")
+          total += price1
+          break
+        case 2:
+          let price2 = +prompt("请输入你的金额:")
+          if (total < price2) {
+            alert("你的余额不足")
+          } else {
+            total -= price2
+          }
+          break
+        case 3:
+          alert("你的余额有:" + total)
+          break
+        case 4:
+          flag = false
+          break
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //声明对象
+    let Ellyina = {
+      username: "Ellyina",
+      'age': 18,
+      gender: "女",
+      song: function () {
+        console.log("唱歌")
+      }
+    }
+    //使用对象属性
+    //法一
+    console.log(Ellyina.username)
+    // 法二
+    console.log(Ellyina['age'])
+    //删除对象属性
+    delete Ellyina.age
+    console.log(Ellyina)
+    //新增或修改属性
+    Ellyina.address = "广东"
+    Ellyina.age = 19
+    console.log(Ellyina)
+    //调用方法
+    Ellyina.song()
+
+
+  </script>
+</body>
+
+</html>

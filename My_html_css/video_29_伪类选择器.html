@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style>
+        /*为确保生效要按L V H A的顺序写*/
+        /*为访问的链接 把没有点击过的链接选出来*/
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        /*选择点击过的链接*/
+        a:visited {
+            color: orange;
+        }
+
+        /*选择鼠标经过的哪个链接*/
+        a:hover {
+            color: skyblue;
+        }
+
+        /*选择鼠标正在按下，还未抬起鼠标的链接*/
+        a:active {
+            color: green;
+        }
+
+        /*把获得光标的表单选出来*/
+        input:focus {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">小猪佩奇</a>
+    <a href="#">果宝特工</a>
+    <a href="#">超兽武装</a>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+</body>
+
+</html>

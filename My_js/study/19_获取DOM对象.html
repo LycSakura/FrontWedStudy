@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+  <p id="nav">导航栏</p>
+  <ul>
+    <li>测试1</li>
+    <li>测试2</li>
+    <li>测试3</li>
+  </ul>
+  <script>
+    //1.获取匹配的第一个元素
+    const box = document.querySelector('.box')
+    console.log(box)
+    const nav = document.querySelector('#nav')
+    console.log(nav)
+    //单个对象才可以，多个对象不行
+    nav.style.color = 'red'
+    const li = document.querySelector('ul li:nth-child(1)')
+    console.log(li)
+    //2.获取所有匹配元素 得到一个伪数组
+    const li1 = document.querySelectorAll('ul li')
+    console.log(li1)
+    for (let i = 0; i < li1.length; i++) {
+      console.log(li1[i])
+    }
+  </script>
+</body>
+
+</html>

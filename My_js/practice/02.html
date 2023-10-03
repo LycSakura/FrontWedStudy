@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h3>一等奖:<span id="one"></span>
+  </h3>
+  <h3>二等奖:<span id="two"></span>
+  </h3>
+  <h3>三等奖:<span id="three"></span>
+  </h3>
+  <script>
+    const arr = ['Ellyina', 'sakura', 'Mikasa', 'rie', 'eve']
+    const random1 = Math.floor(Math.random() * arr.length)
+    const one = document.querySelector('#one')
+    one.innerHTML = arr[random1]
+    arr.splice(random1, 1)
+  </script>
+</body>
+
+</html>

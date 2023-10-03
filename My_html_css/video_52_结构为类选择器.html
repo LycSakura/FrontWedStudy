@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 选择ul里面的第一个 li */
+        ul li:first-child {
+            background-color: pink;
+        }
+
+        /* 选择ul里面的最后一个 li */
+        ul li:last-child {
+            background-color: pink;
+        }
+
+        /* 
+            选择ul里面的第N个 li 
+            N可以是
+            公式2n == even 2n+1 == odd，
+            数字，
+            关键字（odd奇数，even偶数）
+        */
+        ul li:nth-child(even) {
+            background-color: skyblue;
+        }
+
+        /*从0开始 每次加1 必须是n*/
+        ol li:nth-child(n) {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+    </ul>
+    <ol>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+    </ol>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            /* border-width 边框的粗细 */
+            border-width: 5px;
+            /* border-style 边框的样式 solid 是实线 dashed 是虚线 dotted 是点线*/
+            border-style: solid;
+            /* border-color 边框的颜色 */
+            border-color: pink;
+            /* padding 控制内边距距离 */
+            padding: 5px;
+            border-top: 5px solid red;
+            border-bottom: 10px dashed blue;
+            border-right: 5px dotted purple;
+            border-left: 5px dotted green;
+        }
+
+        .one {
+            /* margin 控制外边距 */
+            margin-bottom: 20px;
+        }
+
+        .header {
+            /*要让块级盒子水平居中必须要有宽度*/
+            width: 900px;
+            /* 再将 盒子左右边距设为 auto上下为0 左右为auto*/
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">1</div>
+    <div class="header">2</div>
+</body>
+
+</html>

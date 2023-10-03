@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设置字体</title>
+    <style>
+        h2 {
+            /* 设置字体样式，字体优先级从前往后*/
+            font-family: "微软雅黑", "Microsoft Yahei";
+            /* 设置字体字号 */
+            font-size: 20px;
+            /*设置字体不加粗*/
+            font-weight: 400
+                /* normal = 400*/
+            ;
+        }
+
+        body {
+            font-size: 16px;
+            /*设置字体为倾斜*/
+            font-style: italic;
+        }
+
+        .bold {
+            /* 字体加粗 */
+            font-weight: bold
+                /* bold = 700*/
+            ;
+        }
+
+        em {
+            /*设置字体不倾斜*/
+            font-style: normal;
+        }
+
+        div {
+            /*
+                复合属性的写法
+                font : font-style font-weight font-size/line-height font-family;
+                必须要按顺序写 
+                font-size 和 font-family 必须要有
+            */
+            font: italic 700 16px "Microsoft Yahei";
+        }
+    </style>
+</head>
+
+<body>
+    <h2>原神的秘密</h2>
+    <p>摩拉克斯没有钱</p>
+    <p>派蒙是天理</p>
+    <p>胡桃是A</p>
+    <p class="bold">莹其实不想找哥哥</p>
+    <em>我原本是倾斜的</em>
+    <div>三生三世十里桃花，一心一意百行代码</div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+* {
+    /*消除内外边距*/
+    margin: 0;
+    padding: 0;
+}
+
+em,
+i {
+    /* 消除所有斜体 */
+    font-style: normal;
+}
+
+li {
+    /* 消除小圆点 */
+    list-style: none;
+}
+
+img {
+    /* 照顾低版本浏览器，如果图片外边包含了链接会有边框问题 */
+    border: 0;
+    /* 取消图片底侧有空白缝隙的问题 */
+    vertical-align: middle;
+}
+
+button {
+    /* 经过按钮时鼠标变成小手 */
+    cursor: pointer;
+}
+
+a {
+    color: #666;
+    /* 取消链接下划线 */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c81623;
+}
+
+body {
+    /* 抗锯齿形，让文字显示更加清晰 */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;
+}

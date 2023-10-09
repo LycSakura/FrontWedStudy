@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      height: 3000px;
+      padding-bottom: 200px;
+    }
+
+    div {
+      display: none;
+      overflow: auto;
+      width: 200px;
+      height: 200px;
+      margin: 500px;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    我有很多文字
+    我有很多文字
+    我有很多文字
+    我有很多文字
+    我有很多文字
+    我有很多文字
+    我有很多文字
+    我有很多文字
+    我有很多文字
+    我有很多文字
+    我有很多文字
+    我有很多文字
+    我有很多文字
+    我有很多文字
+    我有很多文字
+    我有很多文字
+    我有很多文字
+    我有很多文字
+    我有很多文字
+    我有很多文字
+    我有很多文字
+    我有很多文字
+  </div>
+  <script>
+    const div = document.querySelector('div')
+    //页面滚动
+    window.addEventListener('scroll', function () {
+      //获取htmL元素
+      console.log(document.documentElement.scrollTop)
+      const n = document.documentElement.scrollTop
+      if (n >= 100) {
+        div.style.display = 'block'
+      } else {
+        div.style.display = 'none'
+      }
+    })
+    // const div = document.querySelector('div')
+    // div.addEventListener('scroll', function () {
+    //   //被卷去的头部
+    //   console.log(div.scrollTop)
+    // })
+  </script>
+</body>
+
+</html>

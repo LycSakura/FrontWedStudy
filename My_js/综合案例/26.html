@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>渲染英雄列表案例</title>
+  <link rel="stylesheet" href="css/hero.css">
+</head>
+
+<body>
+  <!-- 利用对象数组渲染英雄列表案例 -->
+  <ul class="list">
+    <!-- <li><img src="images/01.jpg" title="司马懿"></li>
+    <li><img src="images/02.jpg" title="女娲"></li>
+    <li><img src="images/03.jpg" title="百里守约"></li>
+    <li><img src="images/04.jpg" title="亚瑟"></li>
+    <li><img src="images/05.jpg" title="司马懿"></li>
+    <li><img src="images/06.jpg" title="司马懿"></li>
+    <li><img src="images/07.jpg" title="司马懿"></li>
+    <li><img src="images/08.jpg" title="司马懿"></li>
+    <li><img src="images/09.jpg" title="司马懿"></li>
+    <li><img src="images/10.jpg" title="司马懿"></li>
+    <li><img src="images/11.jpg" title="司马懿"></li>
+    <li><img src="images/12.jpg" title="司马懿"></li>
+    <li><img src="images/13.jpg" title="司马懿"></li>
+    <li><img src="images/14.jpg" title="司马懿"></li>
+    <li><img src="images/15.jpg" title="司马懿"></li>
+    <li><img src="images/16.jpg" title="司马懿"></li> -->
+  </ul>
+  <script>
+    const data = [
+      { name: '司马懿', imgSrc: 'images/01.jpg' },
+      { name: '女娲', imgSrc: 'images/02.jpg' },
+      { name: '百里守约', imgSrc: 'images/03.jpg' },
+      { name: '亚瑟', imgSrc: 'images/04.jpg' },
+      { name: '虞姬', imgSrc: 'images/05.jpg' },
+      { name: '张良', imgSrc: 'images/06.jpg' },
+      { name: '安其拉', imgSrc: 'images/07.jpg' },
+      { name: '李白', imgSrc: 'images/08.jpg' },
+      { name: '阿珂', imgSrc: 'images/09.jpg' },
+      { name: '墨子', imgSrc: 'images/10.jpg' },
+      { name: '鲁班', imgSrc: 'images/11.jpg' },
+      { name: '嬴政', imgSrc: 'images/12.jpg' },
+      { name: '孙膑', imgSrc: 'images/13.jpg' },
+      { name: '周瑜', imgSrc: 'images/14.jpg' },
+      { name: 'XXX', imgSrc: 'images/15.jpg' },
+      { name: 'XXX', imgSrc: 'images/16.jpg' },
+      { name: 'XXX', imgSrc: 'images/17.jpg' },
+      { name: 'XXX', imgSrc: 'images/18.jpg' },
+      { name: 'XXX', imgSrc: 'images/19.jpg' },
+      { name: 'XXX', imgSrc: 'images/20.jpg' }
+    ]
+    const ul = document.querySelector('ul')
+    let str = ''
+    for (let i = 0; i < data.length; i++) {
+      str += `
+				<li>
+          <img src="${data[i].imgSrc}" title="${data[i].name}">
+        </li>
+			`
+    }
+    ul.innerHTML = `
+      ${str}
+    `
+  </script>
+</body>
+
+</html>

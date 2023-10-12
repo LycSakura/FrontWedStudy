@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const pre = {
+      gender: '男',
+      age: '18',
+      hobby: '打游戏',
+      eat: function () {
+        document.write('eat方法被调用')
+      },
+      speak: function () {
+        document.write('speak方法被调用')
+      }
+    }
+    console.log(pre.age);
+    console.log(pre.gender);
+    console.log(pre.hobby);
+    pre.eat()
+    pre.speak()
+  </script>
+</body>
+
+</html>

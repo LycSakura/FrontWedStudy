@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div></div>
+  <script>
+    const gift = '50g的茶叶,清洗球'
+    //先把字符串拆分为数组，根据数组元素和个数生成3对应span，最后在转换为字符串
+    const arr = gift.split(',').map(item => `<span>【赠品】${item}</span> <br>`).join('')
+    const div = document.querySelector('div')
+    div.innerHTML = arr
+  </script>
+</body>
+
+</html>

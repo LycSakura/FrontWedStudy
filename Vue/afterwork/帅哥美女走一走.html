@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="(item,index) in list" :key="item.id">
+                {{item.value}}
+            </li>
+        </ul>
+        <button @click="fn">走一走</button>
+    </div>
+    <script src="../JS/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data: {
+                list: [
+                    { id: 1, value: '帅哥' },
+                    { id: 2, value: '美女' },
+                    { id: 3, value: '程序猿' }
+                ]
+            },
+            methods: {
+                fn() {
+                    this.list.push(this.list.shift())
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

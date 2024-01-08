@@ -1,0 +1,344 @@
+#g-topbar {
+    /* 铺满整个屏幕 */
+    width: 100%;
+    height: 105px;
+}
+
+/* 顶部样式 */
+.m-top {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(36, 36, 36);
+}
+
+.m-top .wrap {
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* 顶部 网易云logo */
+.m-top .logo {
+    float: left;
+    width: 176px;
+    height: 70px;
+    background-image: url("../images/topbar.png");
+    cursor: pointer;
+}
+
+/* 顶部 中间导航栏 */
+.m-top .m-nav {
+    float: left;
+    width: 508;
+    height: 70px;
+}
+
+.m-nav li,
+.m-nav li span,
+.m-nav a,
+.m-nav a em {
+    float: left;
+    height: 70px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 70px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.m-nav li span {
+    padding-left: 18px;
+}
+
+.m-nav .first {
+    width: 94px;
+}
+
+.m-nav .first .cor {
+    display: block;
+    position: absolute;
+    top: 64px;
+    width: 12px;
+    height: 7px;
+    margin-left: 20px;
+    background-position: -226px 0;
+    background-image: url("../images/topbar.png");
+}
+
+.m-nav li:nth-child(2) {
+    width: 94px;
+}
+
+.m-nav li:nth-child(3),
+.m-nav li:nth-child(4) {
+    width: 66px;
+}
+
+.m-nav li:nth-child(5) {
+    width: 80px;
+}
+
+.m-nav .last {
+    position: relative;
+    width: 108px;
+}
+
+/* hot 图标 */
+.m-nav .last .hot {
+    display: block;
+    position: absolute;
+    top: 21px;
+    left: 100px;
+    width: 28px;
+    height: 19px;
+    background-position: -190px 0;
+    background-image: url("../images/topbar.png");
+
+}
+
+.m-nav li:hover {
+    background-color: #000;
+}
+
+/* 顶端 登录按钮 */
+.m-top .m-tophead {
+    float: right;
+    width: 28px;
+    height: 45px;
+    margin-top: 7px;
+    margin: 19px 0 0 20px;
+    background-position: right -47px;
+}
+
+.m-tophead .link {
+    display: block;
+    width: 28px;
+    margin-top: 7px;
+    color: #787878;
+    cursor: pointer;
+}
+
+/* 顶部 创作中心 模块 */
+.m-top .m-create-center {
+    display: block;
+    box-sizing: border-box;
+    float: right;
+    width: 90px;
+    height: 32px;
+    margin: 19px 0 0 12px;
+    padding-left: 16px;
+    line-height: 33px;
+    color: #ccc;
+    border: 1px solid #4f4f4f;
+    border-radius: 20px;
+}
+
+.m-top .m-search {
+    position: relative;
+    float: right;
+    width: 158px;
+    height: 32px;
+}
+
+.m-search .searchbg {
+    float: right;
+    width: 158px;
+    height: 32px;
+    margin-top: 19px;
+    border-radius: 32px;
+    background: url("../images/topbar.png") no-repeat 0 9999px;
+    background-position: 0 -99px;
+    background-color: #fff;
+}
+
+.m-search .searchbg .parent {
+    position: relative;
+    margin: 8px 0 0 30px;
+}
+
+.m-search .searchbg .parent .txt {
+    width: 95%;
+    border: none;
+    outline: none;
+    line-height: 16px;
+    background: transparent;
+
+
+}
+
+.m-search .searchbg .parent .ph {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 90%;
+    color: #9b9b9b;
+    cursor: text;
+}
+
+/* 顶部的第二模块 */
+.m-subtop {
+    width: 100%;
+    height: 35px;
+    border-bottom: 1px solid #a40011;
+    background-color: #C20C0C;
+}
+
+.m-subtop .ms-set {
+    width: 1100px;
+    height: 34px;
+    margin: 0 auto;
+}
+
+.m-subtop .ms-set .navitems {
+    width: 582px;
+    height: 34px;
+    margin-left: 179px;
+}
+
+.m-subtop .ms-set .navitems ul li {
+    display: block;
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    font-size: 12px;
+}
+
+.m-subtop .ms-set .navitems ul li a em {
+    float: left;
+    padding: 0 30px;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.m-subtop .ms-set .navitems ul li:nth-child(2n) em {
+    width: 48px;
+    padding-left: 20px;
+}
+
+.m-subtop .ms-set .navitems ul li:nth-child(2n-1) em {
+    width: 24px;
+    padding-left: 30px;
+}
+
+/* .m-subtop .ms-set .navitems ul li a em .f-icon{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    top: 2px;
+    background-image: url("../images/white-r-icon@3x.png");
+    background-size: cover;
+} */
+
+/* 底部模块制作 */
+.g-ft {
+    width: 100%;
+    height: 164px;
+    border-top: 1px solid #d3d3d3;
+    background-color: #f2f2f2;
+}
+
+/* 设置尾部居中 */
+.g-ft .g-ft-set {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.g-ft .g-ft-set .l-ft {
+    display: block;
+    float: left;
+    width: 520px;
+    padding: 15px;
+    line-height: 24px;
+}
+
+.l-ft span {
+    display: block;
+    float: left;
+    color: #666;
+}
+
+.g-ft .g-ft-set .l-ft .links {
+    width: 100%;
+    height: 24px;
+}
+
+.g-ft .g-ft-set .l-ft .links a {
+    float: left;
+    color: #999;
+}
+
+.g-ft .g-ft-set .l-ft .links .line {
+    display: block;
+    float: left;
+    margin: 0 11px;
+}
+
+.g-ft .g-ft-set .l-ft .links a:hover {
+    text-decoration: underline #999;
+}
+
+.g-ft .g-ft-set .l-ft .sup-copyright,
+.g-ft .g-ft-set .l-ft .mid-copyright {
+    width: 100%;
+    height: 24px;
+}
+
+.g-ft .g-ft-set .l-ft .sub-copyright {
+    width: 100%;
+    height: 28px;
+}
+
+.g-ft .g-ft-set .l-ft .sub-copyright a {
+    float: left;
+}
+
+.g-ft .g-ft-set .l-ft .sub-copyright .police-logo {
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/police.png");
+}
+
+.sup-copyright a,
+.mid-copyright a,
+.sub-copyright a {
+    color: #666;
+}
+
+.sup-copyright a:hover,
+.mid-copyright a:hover,
+.sub-copyright a:hover {
+    text-decoration: underline;
+}
+
+.sub-copyright .police-text:hover {
+    text-decoration: underline;
+}
+
+.g-ft .g-ft-set .r-ft {
+    float: left;
+    width: 420px;
+    height: 100%;
+    margin-top: 33px;
+}
+
+.g-ft .g-ft-set .r-ft li {
+    float: left;
+    margin-right: 30px;
+}
+
+.g-ft .g-ft-set .r-ft li .newlogo {
+    display: block;
+    float: left;
+    width: 50px;
+    height: 45px;
+    background-image: url("../images/foot_enter_new.png");
+    background-size: 113px 552px;
+    background-position: -63px -457px;
+}
+
+.g-ft .g-ft-set .r-ft li span {
+    float: left;
+    margin: 50px -59px;
+}
